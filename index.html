@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Trading Class</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body{margin:0;font-family:Arial;background:#f4f6f8;color:#222}
+    header{background:#0f172a;color:#fff;padding:20px;text-align:center}
+    nav{text-align:center;padding:10px;background:#020617}
+    nav button{padding:8px 14px;margin:5px;border:none;border-radius:6px}
+    section{background:#fff;margin:15px;padding:15px;border-radius:10px}
+    footer{background:#020617;color:#fff;text-align:center;padding:10px}
+  </style>
+  <script>
+    function setLang(l){
+      document.querySelectorAll('[data-hi]').forEach(e=>{
+        e.innerText = l==='hi'?e.dataset.hi:e.dataset.bn;
+      })
+    }
+  </script>
+</head>
+<body onload="setLang('hi')">
 
+<header>
+  <h1>Smart Trading Class</h1>
+  <p>Safe & Smart Trading Education</p>
+</header>
+
+<nav>
+  <button onclick="setLang('hi')">Hindi</button>
+  <button onclick="setLang('bn')">Bengali</button>
+</nav>
+
+<section>
+  <h2 data-hi="होम" data-bn="হোম"></h2>
+  <p data-hi="यह एक ट्रेडिंग एजुकेशन वेबसाइट है।" data-bn="এটি একটি ট্রেডিং শিক্ষা ওয়েবসাইট।"></p>
+</section>
+
+<section>
+  <h2 data-hi="ट्रेडिंग शिक्षा" data-bn="ট্রেডিং শিক্ষা"></h2>
+  <p data-hi="स्टॉक मार्केट बेसिक्स और सेफ ट्रेडिंग।" data-bn="স্টক মার্কেট বেসিকস এবং সেফ ট্রেডিং।"></p>
+</section>
+
+<footer>
+  © 2026 Smart Trading Class
+</footer>
+
+</body>
+</html>
